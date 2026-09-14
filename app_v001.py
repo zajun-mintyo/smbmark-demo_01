@@ -390,13 +390,7 @@ def apply_chart_theme(fig, height=360, title=None):
 
 
 def kpi_card(label, value, sub="", tone="steel"):
-    return f"""
-    <div class="kpi-card {tone}">
-        <div class="kpi-label">{label}</div>
-        <div class="kpi-value">{value}</div>
-        <div class="kpi-sub">{sub}</div>
-    </div>
-    """
+    return f'<div class="kpi-card {tone}"><div class="kpi-label">{label}</div><div class="kpi-value">{value}</div><div class="kpi-sub">{sub}</div></div>'
 
 
 # ====================================================================
